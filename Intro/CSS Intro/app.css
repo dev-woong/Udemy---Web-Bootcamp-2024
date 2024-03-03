@@ -1,0 +1,22 @@
+h2 {
+    color: teal;
+    background-color: rgb(89,151,0);
+}
+
+button {
+    color: magenta;
+    background-color: cyan;
+}
+
+p {
+    color: olive;
+    background: orange;
+}
+/*
+background-color 는 배경색 만을 변경할 수 있는 작은 속성이고,
+background 는 배경색, 그래디언트 등 다양한 스타일을 설정할 수 있는 속성이다.
+*/
+
+body {
+    background-color: #cc55ee;
+}
