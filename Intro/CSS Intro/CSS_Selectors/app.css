@@ -125,6 +125,8 @@ span {
 
 .post a {
 	color: #457b9d;
+	font-weight: 700;
+	text-decoration: none;
 }
 
 footer a {
@@ -146,7 +148,43 @@ input[type="password"] {
 	color: greenyellow;
 }
 
-/* 속성 선택자 옵션 예시 */
+/* 아래 요소들은 대/소문자를 구분함 */
+/* 속성 선택자에 포함된 단어 검색 */
 a[href*="google"] {
 	color: magenta;
 }
+
+/* 속성 선택자의 끝 단어 검색 */
+a[href$=".org"] {
+	color: cyan;
+}
+
+/* 
+Pseudo Classes(상태를 나타내는 클래스)
+
+:active
+:checked
+:first
+:first-child
+:hover
+:not()
+:nth-child()
+:nth-of-type() 
+*/
+
+/* 커서가 올려진 상태(:hover) */
+.post button:hover {
+	background-color: #e63946;
+	color: #f1faee;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* 버튼, anchor 태그를 누르고 있는 등의 상태 */
+.post button:active {
+	background-color: #02c39a;
+	color: #f1faee;
+}
+
